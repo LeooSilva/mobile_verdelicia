@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/telacadastrousuario2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96c434"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rounded_top_left_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Termos"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/paragrafo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:text="AO ACEITAR ESTE TERMO, O TITULAR
+CONCORDA QUE A EMPRESA
+ VERDELÍCIA - VEGAN FOOD TEM
+ACESSO COMPLETO ÀS SUAS
+ INFORMAÇÕES. AO USAR NOSSOS
+SERVIÇOS, VOCÊ CONSENTE
+EXPRESSAMENTE EM FORNECER,
+TRATAR E ARMAZENAR DADOS
+CONFORME NECESSÁRIO PARA
+NOSSOS SERVIÇOS, INCLUINDO:
+INFORMAÇÕES FORNECIDAS POR
+VOCÊ DURANTE O CADASTRO,
+ DETALHES DE PAGAMENTO EM
+TRANSAÇÕES, E INFORMAÇÕES
+ FORNECIDAS NA SEÇÃO OPINIÃO,
+COMO NOME, TELEFONE, CIDADE,
+ ESTADO E E-MAIL."
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/lembrarSenhaCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-45dp"
+            android:textColor="@color/black"
+            android:text="Confirmo a liberação de dados!" />
+
+        <Button
+            android:id="@+id/btn_proximo"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button_black"
+            android:text="Finalizar Cadastro"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
+

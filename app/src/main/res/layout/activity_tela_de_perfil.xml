@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/telaperfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="-25dp"
+    android:background="#96c434">
+
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_top_right_background"
+        android:layout_height="800dp"
+        android:layout_marginTop="170dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="0dp"
+            android:text="sobre mim"
+            android:textColor="#96c434"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iconperfil"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="170dp"
+            android:layout_marginBottom="-85dp"
+            android:src="@drawable/utilizador" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="leo gomes"
+            android:textColor="#96c434"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-3dp"
+            android:text="apelido"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="-15dp"
+            android:background="#000000" /> <!-- Cor da linha -->
+
+
+        <ImageView
+            android:id="@+id/iconemail"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-170dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-143dp"
+            android:text="leonardogomessilva1910@gmail.com"
+            android:textColor="#96c434"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-3dp"
+            android:text="endereço de email"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="-15dp"
+            android:background="#000000" /> <!-- Cor da linha -->
+
+
+        <ImageView
+            android:id="@+id/icontele"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-170dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/telefone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-143dp"
+            android:text="(11) 912781910"
+            android:textColor="#96c434"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-3dp"
+            android:text="Número de telefone"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="-15dp"
+            android:background="#000000" /> <!-- Cor da linha -->
+
+
+        <ImageView
+            android:id="@+id/iconend"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="170dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-95dp"
+            android:text="Av. Francisco Vieria Bueno"
+            android:textColor="#96c434"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-12dp"
+            android:text="Endereço"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:background="#000000" /> <!-- Cor da linha -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:text="Configurações"
+            android:textColor="#96c434"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iconlingua"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="170dp"
+            android:src="@drawable/volume" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-40dp"
+            android:text="Modo silencioso"
+            android:textColor="#96c434"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-6dp"
+            android:text="Idioma"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="-10dp"
+            android:background="#000000" /> <!-- Cor da linha -->
+
+
+        <ImageView
+            android:id="@+id/iconpermissao"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="170dp"
+            android:src="@drawable/smartphone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-40dp"
+            android:text="Camera, localização e microfone"
+            android:textColor="#96c434"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-6dp"
+            android:text="Notificação e mensagem"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="-15dp"
+            android:background="#000000" /> <!-- Cor da linha -->
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:background="#007808"
+        android:gravity="center">
+
+        <!-- Ícone e Texto para "Perfil" -->
+        <LinearLayout
+            android:id="@+id/layout_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/usuario" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Carrinho" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/carrinho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/carrinhos" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrinho"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Home" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/casa" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Fornecedor" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/fornecedor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/caminhao" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fornecedor"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Feedback" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/coracao_feedback" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cor de fundo -->
+    <solid android:color="#04D939" />
+
+    <!-- Definição da borda com a cor desejada -->
+    <stroke
+        android:width="12dp"
+        android:color="#03a63c63" /> <!-- Cor da borda (incluindo transparência) -->
+
+    <!-- Arredondamento personalizado nas bordas -->
+    <corners
+        android:topLeftRadius="20dp"
+        android:topRightRadius="0dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="20dp" />
+</shape>

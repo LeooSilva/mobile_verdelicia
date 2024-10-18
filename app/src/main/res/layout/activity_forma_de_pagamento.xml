@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forma_de_pagamento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96c434">
+
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_top_left_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/light_green"
+            android:text="PAGAMENTO"/>
+
+
+        <TextView
+            android:id="@+id/btn_cartao"
+            android:layout_width="300dp"
+            android:background="@drawable/rounded_btn_pagamento"
+            android:layout_height="70dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:textStyle="bold"
+            android:textColor="@color/light_green"
+            android:text="Cartão"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/cartao"
+            android:layout_marginTop="-65dp"
+            android:layout_marginRight="50dp"
+            />
+
+        <TextView
+            android:id="@+id/btn_pix"
+            android:layout_width="300dp"
+            android:background="@drawable/rounded_btn_pagamento"
+            android:layout_height="70dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:textStyle="bold"
+            android:textColor="@color/light_green"
+            android:text="Pix"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pix"
+            android:layout_marginTop="-65dp"
+            android:layout_marginRight="50dp"
+            />
+
+        <TextView
+            android:id="@+id/btn_boleto"
+            android:layout_width="300dp"
+            android:background="@drawable/rounded_btn_pagamento"
+            android:layout_height="70dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:textStyle="bold"
+            android:textColor="@color/light_green"
+            android:text="boleto"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/boleto"
+            android:layout_marginTop="-65dp"
+            android:layout_marginRight="50dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:orientation="horizontal"
+        android:background="#007808"
+        android:gravity="center">
+
+        <!-- Ícone e Texto para "Perfil" -->
+        <LinearLayout
+            android:id="@+id/layout_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/usuario" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Carrinho" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/carrinho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/carrinhos" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrinho"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Home" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/casa" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Fornecedor" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/fornecedor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/caminhao" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fornecedor"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Feedback" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/coracao_feedback" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

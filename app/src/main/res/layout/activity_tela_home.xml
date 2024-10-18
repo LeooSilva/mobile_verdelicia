@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgound_reto"> <!-- Corrigido o nome do drawable -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-90dp"
+        android:src="@drawable/logoverdeliciafundo" />
+
+    <ImageView
+        android:id="@+id/icon_notifications"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="-200dp"
+        android:contentDescription="Notificações"
+        android:src="@drawable/icon_sino" />
+
+    <ImageButton
+        android:id="@+id/icon_help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ajuda_icon"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="-30dp"
+        android:contentDescription="Ajuda" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/background_reto_verde"
+        android:orientation="vertical">
+        <!-- Conteúdo do container -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="0dp"
+            android:text=" uma empresa onde presa pela
+ qualidade dos alimentos, com
+ isso, contribuindo com a venda
+ de alimentos e ajudando no
+ movimento vegano !!"
+            android:textAlignment="center"
+            android:textColor="#067302"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounded_button_produtos"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Produtos"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/borda_img_fruta_verde" />
+
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="145dp"
+            android:elevation="8dp"
+            android:background="#007808"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Ícone e Texto para "Perfil" -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/perfil"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="-10dp"
+                    android:src="@drawable/usuario" /> <!-- Substitua por um ícone real -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Perfil"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Ícone e Texto para "Carrinho" -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/carrinho"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="-10dp"
+                    android:src="@drawable/carrinhos" /> <!-- Substitua por um ícone real -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Carrinho"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Ícone e Texto para "Home" -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="-10dp"
+                    android:src="@drawable/casa" /> <!-- Substitua por um ícone real -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Home"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Ícone e Texto para "fornecedor" -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fornecedor"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="-10dp"
+                    android:src="@drawable/caminhao" /> <!-- Substitua por um ícone real -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Fornecedor"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Ícone e Texto para "fornecedor" -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feedback"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="-10dp"
+                    android:src="@drawable/coracao_feedback" /> <!-- Substitua por um ícone real -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Feedback"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

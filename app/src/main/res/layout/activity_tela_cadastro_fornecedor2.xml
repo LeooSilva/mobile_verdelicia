@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tela_cadastro_fornecedor_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="-30dp"
+    android:background="#96c434">
+
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_top_left_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de"
+            android:textSize="50dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="-15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fornecedor"
+            android:textSize="45dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/container_forms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-87dp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:text="ENDEREÇO:"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Endereço" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-95dp"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="NUMERO:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Numero do Endreço" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-72dp"
+                android:fontFamily="sans-serif"
+                android:text="COMPLEMENTO"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-110dp"
+                android:fontFamily="sans-serif"
+                android:text="CEP:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/confirmar_senha"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="-15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="xxxxx-xxx"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-45dp"
+                android:fontFamily="sans-serif"
+                android:text="TELEFONE DA EMPRESA:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="30dp"/>
+
+            <EditText
+                android:id="@+id/telefone_fornecedor"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="-15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="xxx.xxx.xxx-xx"
+                android:inputType="textPassword" />
+
+
+
+
+            <Button
+                android:id="@+id/btn_proximo"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_button_black"
+                android:text="Prosseguir"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:background="#007808"
+        android:gravity="center">
+
+        <!-- Ícone e Texto para "Perfil" -->
+        <LinearLayout
+            android:id="@+id/layout_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/usuario" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Carrinho" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/carrinho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/carrinhos" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrinho"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Home" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/casa" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Fornecedor" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/fornecedor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/caminhao" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fornecedor"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Feedback" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/coracao_feedback" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

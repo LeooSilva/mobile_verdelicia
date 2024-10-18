@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/telacadastrousuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96c434"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rounded_top_left_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crie sua"
+            android:textColor="#000000"
+            android:textSize="65sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:text="conta!"
+            android:textColor="#000000"
+            android:textSize="65sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/facalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Já é registrado? Entre aqui"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/container_forms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-105dp"
+                android:fontFamily="sans-serif"
+                android:text="Nome"
+                android:textColor="#067302"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:background="@drawable/edit_text_background"
+                android:hint="Nome" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-105dp"
+                android:fontFamily="sans-serif"
+                android:text="Email"
+                android:textColor="#067302"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:background="@drawable/edit_text_background"
+                android:hint="Email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-105dp"
+                android:fontFamily="sans-serif"
+                android:text="Senha"
+                android:textColor="#067302"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:background="@drawable/edit_text_background"
+                android:hint="Senha"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-75dp"
+                android:fontFamily="sans-serif"
+                android:text="Confirmar senha"
+                android:textColor="#067302"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/confirmar_senha"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:background="@drawable/edit_text_background"
+                android:hint="Confirmar senha"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-99dp"
+                android:fontFamily="sans-serif"
+                android:text="Telefone"
+                android:textColor="#067302"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/telefone"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:textColorHint="#606060"
+                android:background="@drawable/edit_text_background"
+                android:hint="(XX) XXXXX-XXXX"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btn_proximo"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_button_black"
+                android:text="Próximo"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

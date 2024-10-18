@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tela_de_produtos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgound_reto"> <!-- Corrigido o nome do drawable -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-90dp"
+        android:src="@drawable/logoverdeliciafundo" />
+
+    <ImageView
+        android:id="@+id/icon_notifications"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="-200dp"
+        android:contentDescription="Notificações"
+        android:src="@drawable/icon_sino" />
+
+    <ImageButton
+        android:id="@+id/icon_help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ajuda_icon"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="-30dp"
+        android:contentDescription="Ajuda" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/background_reto_verde"
+        android:orientation="vertical">
+
+        <!-- Container de Produtos -->
+        <LinearLayout
+            android:id="@+id/containerprodutoslim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="60dp">
+
+            <!-- Produto Alface -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/container_produtos"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/container_img_produto"
+                    android:padding="10dp"
+                    android:src="@drawable/alface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="Alface\nR$ 4,00"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnm"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="0dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnm"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="0dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!-- Produto Limão -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/container_produtos"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/container_img_produto"
+                    android:padding="10dp"
+                    android:src="@drawable/limao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="Limão\nR$ 2,00"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/btnm"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnm"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="0dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Produto Pepino -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/container_produtos"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/container_img_produto"
+                    android:padding="10dp"
+                    android:src="@drawable/pepino" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="Pepino\nR$ 5,00"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnm"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="0dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnm"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="0dp"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Produto Kiwi -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/container_produtos"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/container_img_produto"
+                    android:padding="10dp"
+                    android:src="@drawable/kiwi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="Kiwi\nR$ 6,00"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/btnm"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/btnm"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+            android:id="@+id/entrarButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Proximo"
+            style="@style/ButtonBlack"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button_black"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-60dp"
+        android:background="#007808"
+        android:gravity="center">
+
+        <!-- Ícone e Texto para "Perfil" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/perfil"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/usuario" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Perfil"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Carrinho" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/carrinho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/carrinhos" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Carrinho"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Home" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/casa" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "fornecedor" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/fornecedor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/caminhao" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fornecedor"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "fornecedor" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/coracao_feedback" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Feedback"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

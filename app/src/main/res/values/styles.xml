@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Definição do Tema -->
+    <style name="Theme.Verdelicia_mobile" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Propriedades do tema -->
+        <item name="colorPrimary">#96c434</item> <!-- Cor principal -->
+        <item name="colorPrimaryDark">#000000</item> <!-- Cor escura principal -->
+        <item name="colorAccent">#FFC107</item> <!-- Cor de destaque -->
+    </style>
+
+    <!-- Estilo Base para Botões -->
+    <style name="BaseButtonStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">8dp</item> <!-- Margem superior opcional -->
+    </style>
+
+    <!-- Estilos para Botões com Cores Específicas -->
+    <style name="ButtonBlack" parent="BaseButtonStyle">
+        <item name="android:background">#000000</item> <!-- Preto -->
+    </style>
+
+    <style name="ButtonBeige" parent="BaseButtonStyle">
+        <item name="android:background">#cdd1be</item> <!-- Beige -->
+    </style>
+    <style name="ButtonGray" parent="BaseButtonStyle">
+        <item name="android:background">#aaaaaa</item> <!-- Cinza -->
+    </style>
+
+    <!-- Estilo para EditText -->
+    <style name="CustomEditTextStyle">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#606060</item> <!-- Cor do texto -->
+        <item name="android:background">@drawable/edit_text_background</item> <!-- Referência a um drawable para bordas arredondadas -->
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>

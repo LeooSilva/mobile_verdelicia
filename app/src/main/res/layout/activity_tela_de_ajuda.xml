@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/telaperfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="-30dp"
+    android:background="#96c434">
+
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/rounded_top_right_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Ajuda"
+            android:textColor="#96c434"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iconajuda"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-33dp"
+            android:src="@drawable/ajuda_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="A Verdelícia respeita sua privacidade e está
+ comprometido em proteger suas informações
+ pessoais. Aqui está um resumo de como
+ coletamos, usamos e protegemos suas
+ informações:"
+            android:textColor="#96c434"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="• Coleta de Informações: Coletamos informações pessoais, como nome,
+ e-mail, endereço e dados de pagamento, para fornecer serviços de
+ vendas.:"
+            android:textColor="#96c434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="•Uso de Informações: Utilizamos as informações para processar
+ pedidos, oferecer suporte ao cliente, melhorar serviços e enviar
+ comunicações sobre promoções e atualizações do aplicativo."
+            android:textColor="#96c434"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="•Compartilhamento de Informações: Podemos compartilhar
+ informações com prestadores de serviços terceirizados para facilitar
+ nosso serviço e cumprir obrigações legais, sem uso para fins de
+ marketing sem seu consentimento."
+            android:textColor="#96c434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="•Segurança de Informações: Implementamos medidas de segurança
+ para proteger informações contra acesso não autorizado."
+            android:textColor="#96c434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="•Segurança de Informações: Implementamos medidas de segurança
+ para proteger informações contra acesso não autorizado."
+            android:textColor="#96c434"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="•Alterações na Política de Privacidade: Atualizamos nossa política
+ periodicamente e notificamos sobre alterações significativas. É
+ recomendado revisá-la regularmente."
+            android:textColor="#96c434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text=" Canais de comunicação :"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text=" Email para contato :
+
+
+ unip2k24@estudante.com"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="  Telefone da Ouvidoria :
+
+
+
+ 11945203671"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:background="#007808"
+        android:gravity="center">
+
+        <!-- Ícone e Texto para "Perfil" -->
+        <LinearLayout
+            android:id="@+id/layout_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/usuario" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Carrinho" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/carrinhos" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrinho"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Home" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/casa" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Fornecedor" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/caminhao" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fornecedor"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ícone e Texto para "Feedback" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/coracao_feedback" /> <!-- Substitua por um ícone real -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

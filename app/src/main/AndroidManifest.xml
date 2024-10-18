@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissão para ler o armazenamento externo -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Verdelicia_mobile"
+        tools:targetApi="31">
+
+        <activity android:name=".forma_de_pagamento"
+                   android:exported="false"/>
+
+        <activity
+            android:name=".pagamento_efetivado"
+            android:exported="false" />
+        <activity
+            android:name=".tela_de_boleto"
+            android:exported="false" />
+        <activity
+            android:name=".tela_pix"
+            android:exported="false" />
+        <activity
+            android:name=".tela_feedback"
+            android:exported="false" />
+        <activity
+            android:name=".termos_finais_fornecedor"
+            android:exported="false" />
+        <activity
+            android:name=".tela_cadastro_fornecedor_2"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_cartao"
+            android:exported="false" />
+        <activity
+            android:name=".pagamento_cartao"
+            android:exported="false" />
+        <activity
+            android:name=".tela_fornecedor"
+            android:exported="true" />
+        <activity
+            android:name=".carrinho_de_produtos"
+            android:exported="false" />
+        <activity
+            android:name=".tela_de_ajuda"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_De_Perfil"
+            android:exported="true" />
+        <activity
+            android:name=".termos_autorizacao_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".teladeprodutos"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_Home"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_usuario2"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityEsqueciSenha"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Adicione as linhas abaixo -->
+        <activity
+            android:name=".forma_de_pagamento"
+            android:exported="false" />
+        <activity
+            android:name=".tela_de_boleto"
+            android:exported="false" />
+        <activity
+            android:name=".tela_pix"
+            android:exported="false" />
+        <activity
+            android:name=".pagamento_cartao"
+            android:exported="false" />
+
+    </application>
+</manifest>

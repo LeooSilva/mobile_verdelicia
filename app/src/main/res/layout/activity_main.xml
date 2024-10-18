@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá!"
+        android:textColor="#96C434"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-190dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="43dp"/>
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo"
+        android:textColor="#96C434"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_below="@id/titulo1"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="-150dp"
+        android:layout_marginLeft="43dp"/>
+
+    <TextView
+        android:id="@+id/paragrafo"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="-250dp"
+        android:textStyle="bold"
+        android:text="Estávamos esperando por você, por favor faça seu login!"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/paragrafo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="283dp"
+        android:layout_marginBottom="-200dp"
+        android:layout_marginEnd="36dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_button_verdecla"
+        android:drawablePadding="16dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/btn_login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="7dp"
+        android:padding="5dp"
+        android:src="@drawable/logoverdelicia" />
+
+</RelativeLayout>
