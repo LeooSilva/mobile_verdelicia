@@ -67,6 +67,7 @@
                     android:src="@drawable/alface" />
 
                 <TextView
+                    android:id="@+id/alfaceTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -83,6 +84,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/alfaceIncrementButton"
                         android:layout_width="20dp"
                         android:layout_height="18dp"
                         android:layout_gravity="center"
@@ -96,6 +98,7 @@
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/alfaceQuantityTextView"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -103,6 +106,7 @@
                         android:text="0" />
 
                     <Button
+                        android:id="@+id/alfaceDecrementButton"
                         android:layout_width="20dp"
                         android:layout_height="18dp"
                         android:layout_gravity="center"
@@ -140,6 +144,7 @@
                     android:src="@drawable/limao" />
 
                 <TextView
+                    android:id="@+id/limaoTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -156,6 +161,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/limaoIncrementButton"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:background="@drawable/btnm"
@@ -169,6 +175,7 @@
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/limaoQuantityTextView"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -176,6 +183,7 @@
                         android:text="0" />
 
                     <Button
+                        android:id="@+id/limaoDecrementButton"
                         android:layout_width="20dp"
                         android:layout_height="18dp"
                         android:layout_gravity="center"
@@ -208,6 +216,7 @@
                     android:src="@drawable/pepino" />
 
                 <TextView
+                    android:id="@+id/pepinoTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -224,6 +233,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/pepinoIncrementButton"
                         android:layout_width="20dp"
                         android:layout_height="18dp"
                         android:layout_gravity="center"
@@ -237,6 +247,7 @@
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/pepinoQuantityTextView"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -244,6 +255,7 @@
                         android:text="0" />
 
                     <Button
+                        android:id="@+id/pepinoDecrementButton"
                         android:layout_width="20dp"
                         android:layout_height="18dp"
                         android:layout_gravity="center"
@@ -276,6 +288,7 @@
                     android:src="@drawable/kiwi" />
 
                 <TextView
+                    android:id="@+id/kiwiTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -292,6 +305,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/kiwiIncrementButton"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:background="@drawable/btnm"
@@ -305,6 +319,7 @@
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/kiwiQuantityTextView"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -312,6 +327,7 @@
                         android:text="0" />
 
                     <Button
+                        android:id="@+id/kiwiDecrementButton"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:background="@drawable/btnm"

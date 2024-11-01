@@ -28,7 +28,7 @@
 
     <!-- Container de Produtos -->
     <LinearLayout
-        android:id="@+id/containerprodutoslim"
+        android:id="@+id/produtos_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -68,38 +68,16 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/btnm"
-                    android:paddingLeft="4dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="4dp"
-                    android:paddingBottom="0dp"
-                    android:text="+"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+
 
                 <TextView
+                    android:id="@+id/quanalface"
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:text="0" />
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/btnm"
-                    android:paddingLeft="4dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="4dp"
-                    android:paddingBottom="0dp"
-                    android:text="-"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -141,38 +119,15 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/btnm"
-                    android:text="+"
-                    android:textColor="#FFFFFF"
-                    android:layout_gravity="center"
-                    android:paddingTop="0dp"
-                    android:paddingBottom="0dp"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
-                    android:textSize="12sp" />
-
                 <TextView
+                    android:id="@+id/quanlimao"
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:text="0" />
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/btnm"
-                    android:paddingLeft="4dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="4dp"
-                    android:paddingBottom="0dp"
-                    android:text="-"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -209,38 +164,17 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/btnm"
-                    android:paddingLeft="4dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="4dp"
-                    android:paddingBottom="0dp"
-                    android:text="+"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+
 
                 <TextView
+                    android:id="@+id/quanpepino"
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:text="0" />
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/btnm"
-                    android:paddingLeft="4dp"
-                    android:paddingTop="0dp"
-                    android:paddingRight="4dp"
-                    android:paddingBottom="0dp"
-                    android:text="-"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -277,47 +211,27 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/btnm"
-                    android:text="+"
-                    android:textColor="#FFFFFF"
-                    android:layout_gravity="center"
-                    android:paddingTop="0dp"
-                    android:paddingBottom="0dp"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
-                    android:textSize="12sp" />
+
 
                 <TextView
+                    android:id="@+id/quankiwi"
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:text="0" />
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/btnm"
-                    android:text="-"
-                    android:textColor="#FFFFFF"
-                    android:layout_gravity="center"
-                    android:paddingTop="0dp"
-                    android:paddingBottom="0dp"
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
-                    android:textSize="12sp" />
+
             </LinearLayout>
         </LinearLayout>
 
 
         <TextView
+            android:id="@+id/total_textview"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
-            android:text="Total:"
+            android:text="Total:R$ 0,00"
             android:background="@drawable/rounded_button_green"
             android:textColor="@color/white"
             android:textSize="25sp"

@@ -54,7 +54,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/nome"
+                android:id="@+id/numcartao"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -72,7 +72,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/nometitular"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -90,14 +90,14 @@
                 android:paddingTop="10dp"/>
 
             <EditText
-                android:id="@+id/senha"
+                android:id="@+id/dt"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
                 android:paddingLeft="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="xx/xx"
-                android:inputType="textPassword" />
+                android:inputType="phone" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
                 android:paddingTop="10dp"/>
 
             <EditText
-                android:id="@+id/confirmar_senha"
+                android:id="@+id/codseg"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -117,7 +117,7 @@
                 android:layout_marginBottom="-15dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="XXX"
-                android:inputType="textPassword" />
+                android:inputType="phone" />
 
 
 

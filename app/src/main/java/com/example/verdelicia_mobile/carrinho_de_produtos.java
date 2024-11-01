@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import java.util.ArrayList;
 
 public class carrinho_de_produtos extends AppCompatActivity { // Renomeie a classe para seguir a convenção de nomenclatura
 
@@ -87,5 +90,21 @@ public class carrinho_de_produtos extends AppCompatActivity { // Renomeie a clas
                 startActivity(intent); // Inicia a Activity de destino
             }
         });
+
+        // Adicionando a lógica para exibir as quantidades e o total
+        Intent intent = getIntent();
+        ArrayList<Integer> quantidades = intent.getIntegerArrayListExtra("QUANTIDADES");
+        double total = intent.getDoubleExtra("TOTAL", 0.0); // Padrão 0.0
+
+        // Exibindo as quantidades nos TextViews
+        if (quantidades != null) {
+            ((TextView) findViewById(R.id.quanlimao)).setText(String.valueOf(quantidades.get(2))); // Limão
+            ((TextView) findViewById(R.id.quanalface)).setText(String.valueOf(quantidades.get(3))); // Alface
+            ((TextView) findViewById(R.id.quanpepino)).setText(String.valueOf(quantidades.get(1))); // Pepino
+            ((TextView) findViewById(R.id.quankiwi)).setText(String.valueOf(quantidades.get(0))); // Kiwi
+        }
+
+        // Atualizando o total no TextView
+        ((TextView) findViewById(R.id.total_textview)).setText(String.format("Total: R$ %.2f", total));
     }
 }

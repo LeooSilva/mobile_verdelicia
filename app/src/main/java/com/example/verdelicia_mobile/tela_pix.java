@@ -104,3 +104,4 @@ public class tela_pix extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

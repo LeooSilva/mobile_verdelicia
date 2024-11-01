@@ -67,6 +67,7 @@
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
+                android:padding="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Nome" />
 
@@ -84,6 +85,7 @@
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
+                android:padding="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Email" />
 
@@ -101,6 +103,7 @@
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
+                android:padding="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Senha"
                 android:inputType="textPassword" />
@@ -119,6 +122,7 @@
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
+                android:padding="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Confirmar senha"
                 android:inputType="textPassword" />
@@ -137,6 +141,7 @@
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
+                android:padding="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="(XX) XXXXX-XXXX"
                 android:inputType="phone" />

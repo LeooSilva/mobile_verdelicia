@@ -6,12 +6,18 @@ import android.view.View;
 import android.widget.Button; // Importando a classe Button
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView; // Importando a classe TextView
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class teladeprodutos extends AppCompatActivity { // Nome da classe deve começar com letra maiúscula
+
+    private List<Produto> produtosCarrinho = new ArrayList<>(); // Lista para armazenar os produtos
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,16 +42,82 @@ public class teladeprodutos extends AppCompatActivity { // Nome da classe deve c
         setClickListener(R.id.home, Tela_Home.class);
         setClickListener(R.id.feedback, tela_feedback.class);
 
-        // Inicialização do botão e configuração do OnClickListener
-        Button buttonRedirect = findViewById(R.id.entrarButton); // Altere para o ID do seu botão
-        buttonRedirect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Redirecionar para a segunda Activity
-                Intent intent = new Intent(teladeprodutos.this, carrinho_de_produtos.class); // Troque carrinho_de_produtos pela sua Activity de destino
-                startActivity(intent); // Inicia a Activity de destino
+        // Inicialização dos produtos
+        initializeProduto(R.id.kiwiIncrementButton, R.id.kiwiDecrementButton, R.id.kiwiQuantityTextView, "Kiwi", 6.00, R.drawable.kiwi);
+        initializeProduto(R.id.pepinoIncrementButton, R.id.pepinoDecrementButton, R.id.pepinoQuantityTextView, "Pepino", 4.00, R.drawable.pepino);
+        initializeProduto(R.id.limaoIncrementButton, R.id.limaoDecrementButton, R.id.limaoQuantityTextView, "Limão", 3.00, R.drawable.limao);
+        initializeProduto(R.id.alfaceIncrementButton, R.id.alfaceDecrementButton, R.id.alfaceQuantityTextView, "Alface", 5.00, R.drawable.alface);
+
+        // Botão para redirecionar para o carrinho
+        Button proximoButton = findViewById(R.id.entrarButton); // Altere para o ID do seu botão
+        proximoButton.setOnClickListener(v -> {
+            // Armazenar produtos no carrinho e redirecionar para a página do carrinho
+            armazenarProdutosCarrinho();
+        });
+    }
+
+    private void initializeProduto(int incrementButtonId, int decrementButtonId, int quantityTextViewId, String nomeProduto, double precoProduto, int imagemProduto) {
+        TextView quantityTextView = findViewById(quantityTextViewId);
+        Button incrementButton = findViewById(incrementButtonId);
+        Button decrementButton = findViewById(decrementButtonId);
+
+        incrementButton.setOnClickListener(v -> {
+            int quantidade = Integer.parseInt(quantityTextView.getText().toString());
+            quantidade++;
+            quantityTextView.setText(String.valueOf(quantidade));
+        });
+
+        decrementButton.setOnClickListener(v -> {
+            int quantidade = Integer.parseInt(quantityTextView.getText().toString());
+            if (quantidade > 0) {
+                quantidade--;
+                quantityTextView.setText(String.valueOf(quantidade));
             }
         });
+    }
+
+    private void armazenarProdutosCarrinho() {
+        produtosCarrinho.clear(); // Limpa a lista antes de armazenar novos produtos
+        double total = 0.0; // Inicializa a variável total
+
+        // Capturando o produto Kiwi
+        total += adicionarProdutoCarrinho("Kiwi", 6.00, R.id.kiwiQuantityTextView, R.drawable.kiwi);
+        // Capturando o produto Pepino
+        total += adicionarProdutoCarrinho("Pepino", 4.00, R.id.pepinoQuantityTextView, R.drawable.pepino);
+        // Capturando o produto Limão
+        total += adicionarProdutoCarrinho("Limão", 3.00, R.id.limaoQuantityTextView, R.drawable.limao);
+        // Capturando o produto Alface
+        total += adicionarProdutoCarrinho("Alface", 5.00, R.id.alfaceQuantityTextView, R.drawable.alface);
+
+        // Passando as quantidades e o total para a tela do carrinho
+        Intent intent = new Intent(teladeprodutos.this, carrinho_de_produtos.class);
+        intent.putExtra("TOTAL", total); // Passa o total
+        intent.putIntegerArrayListExtra("QUANTIDADES", getQuantidades()); // Passa a lista de quantidades
+        startActivity(intent); // Inicia a Activity de destino
+
+
+
+    }
+
+    private double adicionarProdutoCarrinho(String nomeProduto, double precoProduto, int quantityTextViewId, int imagemProduto) {
+        TextView quantityTextView = findViewById(quantityTextViewId);
+        int quantidade = Integer.parseInt(quantityTextView.getText().toString());
+
+        if (quantidade > 0) {
+            produtosCarrinho.add(new Produto(nomeProduto, precoProduto, quantidade, String.valueOf(imagemProduto))); // Adiciona ao carrinho se a quantidade for maior que 0
+            return quantidade * precoProduto; // Retorna o valor do produto adicionado
+        }
+        return 0.0; // Retorna 0 se não foi adicionado
+    }
+
+    // Método auxiliar para obter a lista de quantidades
+    private ArrayList<Integer> getQuantidades() {
+        ArrayList<Integer> quantidades = new ArrayList<>();
+        quantidades.add(Integer.parseInt(((TextView) findViewById(R.id.kiwiQuantityTextView)).getText().toString()));
+        quantidades.add(Integer.parseInt(((TextView) findViewById(R.id.pepinoQuantityTextView)).getText().toString()));
+        quantidades.add(Integer.parseInt(((TextView) findViewById(R.id.limaoQuantityTextView)).getText().toString()));
+        quantidades.add(Integer.parseInt(((TextView) findViewById(R.id.alfaceQuantityTextView)).getText().toString()));
+        return quantidades; // Retorna a lista de quantidades
     }
 
     // Método auxiliar para configurar o OnClickListener de um ImageView
@@ -61,5 +133,20 @@ public class teladeprodutos extends AppCompatActivity { // Nome da classe deve c
     public void openHelpPage(View view) {
         Intent intent = new Intent(teladeprodutos.this, tela_de_ajuda.class);
         startActivity(intent);
+    }
+}
+
+// Classe Produto para armazenar informações do produto
+class Produto {
+    String nome;
+    double preco;
+    int quantidade;
+    String imagem;
+
+    Produto(String nome, double preco, int quantidade, String imagem) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+        this.imagem = imagem;
     }
 }

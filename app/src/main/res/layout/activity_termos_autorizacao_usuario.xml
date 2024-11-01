@@ -55,7 +55,7 @@ COMO NOME, TELEFONE, CIDADE,
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/lembrarSenhaCheckBox"
+            android:id="@+id/checkbox_termos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

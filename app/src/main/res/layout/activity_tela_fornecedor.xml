@@ -59,7 +59,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/nome"
+                android:id="@+id/nomeEmpresa"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -78,7 +78,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/nomeContato"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -97,14 +97,14 @@
                 android:paddingTop="10dp"/>
 
             <EditText
-                android:id="@+id/senha"
+                android:id="@+id/telefoneEmpresa"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
                 android:paddingLeft="10dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="(55) xxxxxxx-xxxx"
-                android:inputType="textPassword" />
+                android:inputType="phone" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
                 android:paddingTop="10dp"/>
 
             <EditText
-                android:id="@+id/cpf"
+                android:id="@+id/cpfCnpjEmpresa"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -125,20 +125,20 @@
                 android:layout_marginBottom="-15dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="xxxxxx-xx"
-                android:inputType="textPassword" />
+                android:inputType="phone" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-45dp"
+                android:layout_marginLeft="-105dp"
                 android:fontFamily="sans-serif"
-                android:text="NUMERO DE CADASTRO:"
+                android:text="SENHA:"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:paddingTop="30dp"/>
 
             <EditText
-                android:id="@+id/numero_cadstro"
+                android:id="@+id/senhafor"
                 android:layout_width="260dp"
                 android:layout_height="50dp"
                 android:textColorHint="#606060"
@@ -175,7 +175,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="25dp"
         android:orientation="horizontal"
         android:background="#007808"
         android:gravity="center">

@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -77,14 +79,23 @@ public class termos_finais_fornecedor extends AppCompatActivity {
             }
         });
 
-        // Redirecionamento ao pressionar o botão "btnpagamento"
-        Button btnPagamento = findViewById(R.id.btnpagamento); // Certifique-se de que o ID está correto
+        // Encontrando o CheckBox e o botão "btntermos"
+        CheckBox fornecedorCheckBox = findViewById(R.id.fornecedorCheckBox);
+        Button btnPagamento = findViewById(R.id.btntermos); // Certifique-se de que o ID está correto
+
+        // Redirecionamento ao pressionar o botão "btntermos"
         btnPagamento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(termos_finais_fornecedor.this, ActivityLogin.class); // Redireciona para a página ActivityLogin
-                startActivity(intent);
+                if (fornecedorCheckBox.isChecked()) {
+                    Toast.makeText(termos_finais_fornecedor.this, "Cadastro fornecedor finalizado", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(termos_finais_fornecedor.this, ActivityLogin.class); // Redireciona para a página ActivityLogin
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(termos_finais_fornecedor.this, "Termos não aceito", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
 }
+

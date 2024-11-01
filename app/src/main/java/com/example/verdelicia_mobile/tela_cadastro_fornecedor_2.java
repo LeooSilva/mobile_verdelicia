@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class tela_cadastro_fornecedor_2 extends AppCompatActivity {
+
+    private EditText editEndereco, editNumero, editComplemento, editCep, editTelefoneEmpresa;
+    private Button btnProximo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,64 +32,65 @@ public class tela_cadastro_fornecedor_2 extends AppCompatActivity {
             return insets;
         });
 
-        // Encontrando o ImageView no layout para perfil
-        ImageView imageViewPerfil = findViewById(R.id.perfil); // Verifique se o ID está correto
-        imageViewPerfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tela_cadastro_fornecedor_2.this, Tela_De_Perfil.class); // Verifique se o nome das Atividades está correto
-                startActivity(intent);
-            }
-        });
+        // Inicializando os campos de input
+        editEndereco = findViewById(R.id.editEndereco);
+        editNumero = findViewById(R.id.editNumero);
+        editComplemento = findViewById(R.id.editComplemento);
+        editCep = findViewById(R.id.editCep);
+        editTelefoneEmpresa = findViewById(R.id.editTelefoneEmpresa);
 
-        // Encontrando o ImageView no layout para carrinho
-        ImageView imageViewCarrinho = findViewById(R.id.carrinho); // Certifique-se de que o ID está correto
-        imageViewCarrinho.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tela_cadastro_fornecedor_2.this, carrinho_de_produtos.class); // Verifique se o nome das Atividades está correto
-                startActivity(intent);
-            }
-        });
-
-        // Encontrando o ImageView no layout para fornecedor
-        ImageView imageViewFornecedor = findViewById(R.id.fornecedor); // Certifique-se de que o ID está correto
-        imageViewFornecedor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tela_cadastro_fornecedor_2.this, tela_fornecedor.class); // Verifique se o nome das Atividades está correto
-                startActivity(intent);
-            }
-        });
-
-        // Encontrando o ImageView no layout para home
-        ImageView imageViewHome = findViewById(R.id.home); // Certifique-se de que o ID está correto
-        imageViewHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tela_cadastro_fornecedor_2.this, Tela_Home.class); // Verifique se o nome das Atividades está correto
-                startActivity(intent);
-            }
-        });
-
-        // Encontrando o ImageView no layout para feedback
-        ImageView imageViewFeedback = findViewById(R.id.feedback); // Certifique-se de que o ID está correto
-        imageViewFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tela_cadastro_fornecedor_2.this, tela_feedback.class); // Verifique se o nome das Atividades está correto
-                startActivity(intent);
-            }
-        });
-
-        // Redirecionamento ao pressionar o botão "btn_proximo"
-        Button btnProximo = findViewById(R.id.btn_proximo); // Certifique-se de que o ID está correto
+        // Botão para ir à próxima tela após validação
+        btnProximo = findViewById(R.id.btn_proximo);
         btnProximo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(tela_cadastro_fornecedor_2.this, termos_finais_fornecedor.class); // Redireciona para a página termos_finais_fornecedor
-                startActivity(intent);
+                if (validarCampos()) {
+                    Intent intent = new Intent(tela_cadastro_fornecedor_2.this, termos_finais_fornecedor.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(tela_cadastro_fornecedor_2.this, "Por favor, preencha todos os campos.", Toast.LENGTH_LONG).show();
+                }
             }
         });
+
+        // Configuração dos ícones de navegação
+        ImageView imageViewPerfil = findViewById(R.id.perfil);
+        imageViewPerfil.setOnClickListener(v -> {
+            Intent intent = new Intent(tela_cadastro_fornecedor_2.this, Tela_De_Perfil.class);
+            startActivity(intent);
+        });
+
+        ImageView imageViewCarrinho = findViewById(R.id.carrinho);
+        imageViewCarrinho.setOnClickListener(v -> {
+            Intent intent = new Intent(tela_cadastro_fornecedor_2.this, carrinho_de_produtos.class);
+            startActivity(intent);
+        });
+
+        ImageView imageViewFornecedor = findViewById(R.id.fornecedor);
+        imageViewFornecedor.setOnClickListener(v -> {
+            Intent intent = new Intent(tela_cadastro_fornecedor_2.this, tela_fornecedor.class);
+            startActivity(intent);
+        });
+
+        ImageView imageViewHome = findViewById(R.id.home);
+        imageViewHome.setOnClickListener(v -> {
+            Intent intent = new Intent(tela_cadastro_fornecedor_2.this, Tela_Home.class);
+            startActivity(intent);
+        });
+
+        ImageView imageViewFeedback = findViewById(R.id.feedback);
+        imageViewFeedback.setOnClickListener(v -> {
+            Intent intent = new Intent(tela_cadastro_fornecedor_2.this, tela_feedback.class);
+            startActivity(intent);
+        });
+    }
+
+    // Método para verificar se todos os campos foram preenchidos
+    private boolean validarCampos() {
+        return !editEndereco.getText().toString().isEmpty()
+                && !editNumero.getText().toString().isEmpty()
+                && !editComplemento.getText().toString().isEmpty()
+                && !editCep.getText().toString().isEmpty()
+                && !editTelefoneEmpresa.getText().toString().isEmpty();
     }
 }
